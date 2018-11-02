@@ -60,6 +60,12 @@ app.get('/bad', (req, res) => {
     })
     });
 
+    app.get('/worse', (req, res) => {
+        res.render('worse.hbs',{
+            pageTitle: 'Worse'
+        });
+        });
+
 app.listen(port, () => {
     console.log(`Server is up on port ${port}`);
 });
